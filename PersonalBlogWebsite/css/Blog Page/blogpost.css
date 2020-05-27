@@ -22,6 +22,7 @@
         "title"
         "date"
         "image"
+        "quote"
         "main-post";
 }
 @media (min-width:1000px ) {
@@ -52,9 +53,17 @@
     grid-area: date;
     font-size: 10px;
 }
-#main-image{
-grid-area: image;
+figure{
+    grid-area: image;
+}
+#quote{
+    grid-area:quote;
 }
 #main-post-content{
     grid-area: main-post;
+}
+figcaption {
+    font-style: italic;
+    font-size: 10px;
+    padding: 2px;
 }

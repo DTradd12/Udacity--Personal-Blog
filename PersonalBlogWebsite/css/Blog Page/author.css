@@ -5,8 +5,8 @@
 .author-info{
     grid-area: author;
     display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 70px 20px 155px 1fr;
+    grid-gap: 2px;
+    grid-template-columns: 70px 150px 155px 1fr;
     font-family: "Times New Roman", "Open Sans", sans-serif;
     grid-template-areas:
         "ava social name bio"
