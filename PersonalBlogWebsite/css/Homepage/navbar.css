@@ -1,0 +1,25 @@
+/*Nav bar*/
+#navbox{
+    grid-area:nav;
+    font-family: "Bookman Old Style", sans-serif;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 12px;
+}
+.topnav a:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+.topnav a.active{
+    background-color: #66FCF1;
+    color: black;
+}

@@ -1,0 +1,60 @@
+/*Posts page blog post*/
+#blogpost{
+    display:grid;
+    grid-template-areas:
+        "author"
+        "post";
+}
+.author-info, .main-post{
+    border-radius: 5px;
+    background-color: #333;
+    margin-bottom: 5px;
+}
+.main-post {
+    grid-area: post;
+    display: grid;
+    grid-gap: 5px;
+    padding: 5px;
+    text-align: left;
+    font-family: "Roboto Light", "Open Sans", sans-serif;
+    font-size: 15px;
+    grid-template-areas:
+        "title"
+        "date"
+        "image"
+        "main-post";
+}
+@media (min-width:1000px ) {
+    .main-post {
+        grid-area: post;
+        display: grid;
+        grid-gap:5px;
+        padding: 5px;
+        text-align: left;
+        font-family: "Roboto Light", "Open Sans", sans-serif;
+        font-size: 15px;
+        grid-template-areas:
+            "auth title title"
+            "auth date date"
+            "auth image main-post";
+    }
+}
+#main-post-title {
+    grid-area: title;
+    font-size: 30px;
+    font-weight: bold;
+}
+#main-post-date {
+    grid-area: date;
+    font-size: 10px;
+}
+#main-post-date {
+    grid-area: date;
+    font-size: 10px;
+}
+#main-image{
+grid-area: image;
+}
+#main-post-content{
+    grid-area: main-post;
+}

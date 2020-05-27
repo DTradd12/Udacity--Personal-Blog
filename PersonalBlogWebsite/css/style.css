@@ -1,0 +1,32 @@
+/*Imports*/
+@import "Homepage/header.css";
+@import "Homepage/navbar.css";
+@import "Blog Page/blogpost.css";
+@import "Homepage/post.css";
+@import "Blog Page/author.css";
+@import "Blog Page/social.css";
+/*Main Body*/
+body {
+    background-color: rgb(21, 32, 43);
+}
+.main{
+    display: grid;
+    border-radius: 5px;
+    width: 75%;
+    color: #66FCF1;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "hdr"
+        "nav";
+}
+.main, .post-container {
+    margin:auto;
+}
+footer {
+    width: 75%;
+    margin:auto;
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+}

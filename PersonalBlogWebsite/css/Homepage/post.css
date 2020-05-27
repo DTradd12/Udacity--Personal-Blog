@@ -1,0 +1,86 @@
+/*Posts*/
+.post-container {
+    display: grid;
+    border-radius: 5px;
+    width: 75%;
+    color: #66FCF1;
+    padding: 5px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "post";
+}
+/*Each individual post*/
+#home-post {
+    display: grid;
+    padding: 5px;
+    grid-area: post;
+    border-radius: 5px;
+    font-family: "Roboto Light", "Open Sans", sans-serif;
+    background-color: #333;
+    grid-template-areas:
+        "img"
+        "cat"
+        "date"
+        "ttl"
+        "sum";
+}
+@media(min-width: 1000px) {
+    #home-post {
+        display: grid;
+        padding: 5px;
+        grid-area: post;
+        border-radius: 5px;
+        font-family: "Roboto Light", "Open Sans", sans-serif;
+        background-color: #333;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "img cat"
+            "img date"
+            "img ttl"
+            "img sum";
+    }
+}
+#title, #img, #category, #post-date, #sum{
+    display: flex;
+    justify-content: center;
+    padding: 2.5px;
+    text-align: center;
+}
+#img{
+    grid-area: img;
+    min-height:200px;
+    background-image: url("https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1440,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1519989850/coding_dtvakc");
+    background-size: cover;
+    border-radius: 5px;
+}
+#img:hover{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: .7s ease;
+}
+#category{
+    font-size: 10px;
+    grid-area: cat;
+}
+#post-date{
+    font-size: 10px;
+    grid-area: date;
+}
+#title a {
+    color: #66FCF1;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+    grid-area: ttl;
+}
+#title a:visited{
+    text-decoration: none;
+}
+#title a:hover {
+    text-decoration: underline;
+}
+#sum{
+    font-size: 15px;
+    grid-area: sum;
+}

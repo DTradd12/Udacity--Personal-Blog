@@ -1,0 +1,17 @@
+/*Header*/
+.header {
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-image: url("https://www.ubackground.com/_ph/86/869464123.jpg");
+    background-size: 400px;
+    font-family: "Bookman Old Style", sans-serif;
+    font-size:35px;
+    max-height: 400px;
+    justify-content: center;
+    grid-area:hdr;
+}
+.header h1:hover{
+    color:white;
+    transition: .7s;
+}
